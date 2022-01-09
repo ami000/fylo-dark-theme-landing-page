@@ -3,6 +3,25 @@
   margin-left: auto;
   margin-right: auto;
 
+  &__field-error {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: -18px;
+    left: 18px;
+    color: #e94a4a;
+  }
+
+  &__response-error {
+    margin-top: 15px;
+    width: 100%;
+    bottom: -18px;
+    text-align: center;
+    display: block;
+    left: 18px;
+    color: #e94a4a;
+  }
+
   &__content {
     width: 100%;
     max-width: 720px;
@@ -12,6 +31,7 @@
   }
 
   &__flex-container {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,13 +40,21 @@
     }
   }
 
+  &__input-div {
+    display: flex;
+  }
+
   &__child--1 {
+    position: relative;
+    margin: 5px;
     @media all and (min-width: 768px) {
       flex: 0.7;
     }  
   }
 
   &__child--2 {
+    position: relative;
+    margin: 5px;
     @media all and (min-width: 768px) {
       flex: 0.3;
     }
